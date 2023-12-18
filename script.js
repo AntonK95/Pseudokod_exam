@@ -5,11 +5,11 @@
 // 1. Ange totala kostnaden - let totalCost = 0;
 // 2. Ange antal vänner - let numberOfFriends = 0;
 // 3. Ange procent dricks - let tipAmount = 0;
-// 4. Beräkna kostnaden ink dricks - totalCostWithTip 
-//    För att räkna ut - totalCostWithTip = totalCost + tipAmount;?
+// 4. Beräkna kostnaden ink dricks - let totalCostWithTip 
+//    För att räkna ut - let totalCostWithTip = totalCost + tipAmount;?
 // 5. Dela den totala kostnaden med antal vänner - 
-//    För att räkna ut - costPerFriend = totalCostWithTip / numberOfFriends;
-// 6. Visa hur mycket varje vän skall betala -  costPerFriend
+//    För att räkna ut - let costPerFriend = totalCostWithTip / numberOfFriends;
+// 6. Visa hur mycket varje vän skall betala - let costPerFriend
 
 let totalCost = läs in användarinput("vad är den totala kostnaden?");
 let numberOfFriends = läs in användarinput("Hur många är ni som skall dela på kostnaden?");
