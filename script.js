@@ -12,8 +12,10 @@
 // 6. Visa hur mycket varje vän skall betala - let costPerFriend
 
 let totalCost = läs in användarinput("vad är den totala kostnaden?");
+
 let numberOfFriends = läs in användarinput("Hur många är ni som skall dela på kostnaden?");
-let tipAmount = läs in användarinput("Hur mucket vill ni lämna i dricks?");
+
+let tipAmount = läs in användarinput("Hur mycket vill ni lämna i dricks?");
 
 let totalCostWithTip = totalCost + (totalCost * tipAmount);
 
@@ -32,12 +34,20 @@ function play()
     SET variabel startOrd till "FOUR";
     SET variabel slutordOrd till "FIVE";
 
+    while(kör tills startOrd === slutOrd)
+        SET variabel nyttOrd till användarinput;
+        kolla om nyttOrd.lenght = startOrd.lenght
+            kolla om ordbok innehåller nyttOrd && isOneLetterApart är SANT
+                startOrd tilldelas nyttOrd;
+    end while
+    Skriv ut "Grattis du vann!"
 
 end function
 
 function isOneLetterApart(wordOne, wordTwo)
     SET variabel diffCount till 0;
 
+    for()
 
     return diffCount === 1; // returnerar sant om endast en bokstav ändrats, annars falskt
 end function
