@@ -35,9 +35,13 @@ function play()
     SET variabel slutordOrd till "FIVE";
 
     while(kör tills startOrd === slutOrd)
+        // Användaren anger ett nytt ord / ny bokstav
         SET variabel nyttOrd till användarinput;
-        kolla om nyttOrd.lenght = startOrd.lenght
+        // Kontrollera om nyttOrd har samma längd som startOrd
+        kolla om nyttOrd.length = startOrd.length
+            // och om det finns i ordbok och är ett bokstavsbyte bort
             kolla om ordbok innehåller nyttOrd && isOneLetterApart är SANT
+                // Uppdatera startOrd
                 startOrd tilldelas nyttOrd;
     end while
     Skriv ut "Grattis du vann!"
@@ -45,9 +49,16 @@ function play()
 end function
 
 function isOneLetterApart(wordOne, wordTwo)
+    // Räkna antalet bokstavsavvikelser
     SET variabel diffCount till 0;
 
-    for()
+
+    // Index för varje bokstav i orden
+    for (index = 0; index < wordOne.length; index++)
+        // Om en bokstav inte är lika i de två orden
+        if (wordOne[index] INTE är lika med wordTwo[index])
+            ÖKA diffCount med 1;
+    end for
 
     return diffCount === 1; // returnerar sant om endast en bokstav ändrats, annars falskt
 end function
